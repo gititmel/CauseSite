@@ -24,25 +24,76 @@
 		</ul>
 	</nav>
 	<div class="row" id="bg">
-		<div class="col-md-6" id="donateInfo">INFO ABOUT DONATE</div>
+		<div class="col-md-6" id="donateInfo">INFO ABOUT DONATE
+
+
+		</div>
 
 		<div class="col-md-6" >
-			<form class="form-inline">
+			
 			 <div class="form-group">
 			    <label class="sr-only" for="exampleInputAmount">Amount (in dollars)
 			    </label>
 			    <div class="input-group">
 			     <div class="input-group-addon">$</div>
-			    	<input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+			    	<input type="text" class="form-control" id="amount" placeholder="Amount">
 			     <div class="input-group-addon">.00</div>
 			    </div>
 			  </div>
-			  <button type="submit" class="btn btn-primary">Transfer cash
-			  </button>
-			</form>
-		</div>	
 
-	</div>
-</div>
+			  	<div class="form-group">
+			    <div class="input-group">
+			     <div class="input-group-addon">Card Number</div>
+      			<input type="text" size="20" data-stripe="number">
+			    </div>
+			  </div>
+
+			  	<div class="form-group">
+			    <div class="input-group">
+			    <div class="input-group-addon">Expiration (MM/YY)</div>
+      				<input type="text" size="2" data-stripe="exp_month">
+			    </div>
+			    <div class="input-group-addon">CVC</div>
+      				<input type="text" size="2" data-stripe="exp_month">
+			    </div>
+
+
+			  </div>
+
+
+			
+
+  			<div class="form-row">
+    			<label>
+      				<div class="input-group-addon">Expiration (MM/YY)</div>
+      				<input type="text" size="2" data-stripe="exp_month">
+    			</label>
+    			<span> / </span>
+    			<input type="text" size="2" data-stripe="exp_year">
+  			</div>
+
+  			<div class="form-row">
+    			<label>
+      					<div class="input-group-addon">CVC</div>
+      					<input type="text" size="4" data-stripe="cvc">
+    			</label>
+  			</div>
+
+  			<input type="button" class="btn btn-primary" value="Submit Payment">
+			</form>
+		</div> <!--	end of col md 6-->
+	</div>  <!--	end of row id=bj-->
+</div> <!--	end of container-->
+
+
+
+<!--JQUERY-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="js/validate.js"></script>
+
 </body>
 </html>

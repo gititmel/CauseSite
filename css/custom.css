@@ -1,11 +1,22 @@
 
 #bg{
-	background-color: red;
+	border 			:1px solid red;
 
 }
 
 #donateInfo{
-	background-color: yellow;
-	position 	: relative;
+	background		: yellow;
+	position 		: relative;
+	border 			: 1px solid black;
+	height 			: 100vh;
 
+}
+
+.col-md-4{
+	border 		:1px solid black;
+	text-align 	:center;
+}
+
+.col-md-8{
+	border 	:1px solid black;
 }
