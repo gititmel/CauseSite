@@ -4,33 +4,36 @@
 	<link rel="stylesheet" href="css/normalize.css"/>
 	<link rel="stylesheet" href="css/bootstrap.css"/>
 	<link rel="stylesheet" href="css/custom.css"/>
-	
 
-	<title>Volunteer</title>
+	<title>Donate to Science!</title>
 </head>
 <body>
+
+
+	<div class="navigation">
+		<nav>
+			<ul class="nav nav-pills">
+			  <li class="nav-item">
+			    <a class="nav-link active" href="index.html">home</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="donate.html">donations</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="volunteer.html">volunteer</a>
+			  </li>
+			</ul>
+		</nav>
+	</div>
+
 <div class="container">
-	<nav>
-		<ul class="nav nav-pills">
-		  <li class="nav-item">
-		    <a class="nav-link active" href="index.html">home</a>
-		  </li>
-		  <li class="nav-item">
-		    <a class="nav-link" href="donate.html">donations</a>
-		  </li>
-		  <li class="nav-item">
-		    <a class="nav-link active" href="volunteer.html">volunteer</a>
-		  </li>
-		</ul>
-	</nav>
-	<div class="row" id="bg">
-		<div class="col-md-6" id="donateInfo">INFO ABOUT DONATE
-
-
-		</div>
-
+	<div class="row" id="shell">
 		<div class="col-md-6" >
-			
+			<h1> 
+			I want to support middle school science!
+			</h1>
+			<p> Your donations will help make our school's yearly science fair a memorable event for students </p>
+
 			 <div class="form-group">
 			    <label class="sr-only" for="exampleInputAmount">Amount (in dollars)
 			    </label>
@@ -39,49 +42,41 @@
 			    	<input type="text" class="form-control" id="amount" placeholder="Amount">
 			     <div class="input-group-addon">.00</div>
 			    </div>
-			  </div>
 
-			  	<div class="form-group">
+			 <br>
+
+			    <label class="sr-only" for="exampleInputAmount">Card Number
+			    </label>
 			    <div class="input-group">
-			     <div class="input-group-addon">Card Number</div>
-      			<input type="text" size="20" data-stripe="number">
+			     <div class="input-group-addon">Number</div>
+			    	<input type="text" class="form-control" id="cardNum" placeholder="Card Number">
 			    </div>
-			  </div>
-
-			  	<div class="form-group">
+			 <br>
+			    <label class="sr-only" for="exampleInputAmount">Verification
+			    </label>
 			    <div class="input-group">
-			    <div class="input-group-addon">Expiration (MM/YY)</div>
-      				<input type="text" size="2" data-stripe="exp_month">
+			     <div class="input-group-addon">Expiration</div>
+			    	<input type="text" class="form-control" id="exp" placeholder="MM/YY">
+			     <div class="input-group-addon">CVV</div>
+			     <input type="text" class="form-control" id="amount" placeholder="(on the back of your card)">
 			    </div>
-			    <div class="input-group-addon">CVC</div>
-      				<input type="text" size="2" data-stripe="exp_month">
-			    </div>
-
-
-			  </div>
-
-
-			
-
-  			<div class="form-row">
-    			<label>
-      				<div class="input-group-addon">Expiration (MM/YY)</div>
-      				<input type="text" size="2" data-stripe="exp_month">
-    			</label>
-    			<span> / </span>
-    			<input type="text" size="2" data-stripe="exp_year">
-  			</div>
-
-  			<div class="form-row">
-    			<label>
-      					<div class="input-group-addon">CVC</div>
-      					<input type="text" size="4" data-stripe="cvc">
-    			</label>
-  			</div>
-
-  			<input type="button" class="btn btn-primary" value="Submit Payment">
+			    <br>
+			  <input type="button" class="btn btn-primary" value="Submit Payment">
+			  </div> <!-- end of form-group -->
 			</form>
 		</div> <!--	end of col md 6-->
+
+
+
+		<div class="col-md-6" id="donateInfo">
+		<h1>Give us your $$</h1>
+		<img src="http://lorempixel.com/400/200/" align="center">
+		<p>
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		</p>
+
+
+		</div>
 	</div>  <!--	end of row id=bj-->
 </div> <!--	end of container-->
 
